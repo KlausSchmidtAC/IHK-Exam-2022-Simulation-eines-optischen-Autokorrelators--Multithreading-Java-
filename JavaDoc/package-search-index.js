@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"Algorithmus"},{"l":"All Packages","u":"allpackages-index.html"},{"l":"Ausgabe"},{"l":"Controller"},{"l":"Eingabe"},{"l":"Main"},{"l":"Model"},{"l":"Model.Exceptions"}];updateSearchResults();
