@@ -235,7 +235,7 @@ AKF_Simulator/
 ### Szenario 1: Schnellstart mit Batch-Skript
 ```cmd
 # 1. starte_AKF_Simulation.bat per Doppelklick öffnen
-# 2. Eingabepfad eingeben: ./Messdaten
+# 2. Eingabepfad eingeben: ./data
 # 3. Ausgabepfad eingeben: ./Ergebnisse (oder Enter für Standard)
 # 4. Simulation läuft automatisch
 ```
