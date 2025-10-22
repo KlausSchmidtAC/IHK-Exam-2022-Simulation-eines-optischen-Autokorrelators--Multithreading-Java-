@@ -1,11 +1,38 @@
 # AKF Simulator
 
 [![Java](https://img.shields.io/badge/Java-18+-orange.svg)](https://www.oracle.com/java/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/username/AKF_Simulator)
+[![License: Educational](https://img.shields.io/badge/License-Educational-blue.svg)](#lizenz)
+[![IHK Project](https://img.shields.io/badge/IHK-Aachen%20Abschluss-red.svg)](#über-das-projekt)
+[![Educational Use](https://img.shields.io/badge/Use-Educational%20Only-green.svg)](#lizenz)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#systemanforderungen)
 [![JAR](https://img.shields.io/badge/JAR-Ready-green.svg)](#installation-und-ausführung)
 
-Ein **Java-basierter Autokorrelationsfunktions-Simulator** mit fortschrittlichen mathematischen Algorithmen für die präzise Analyse von Messdaten. Das System nutzt Multi-Threading-Architekturen für optimale Performance und wird über das interaktive Batch-Skript `starte_AKF_Simulation.bat` gestartet.
+Ein **Java-basierter Autokorrelationsfunktions-Simulator** mit fortgeschrittenen mathematischen Algorithmen für die präzise Analyse von Messdaten. Das System nutzt Multi-Threading-Architekturen für optimale Performance und wird über das interaktive Batch-Skript `starte_AKF_Simulation.bat` gestartet.
+
+**Entwickelt als Abschlussprüfung für die IHK Aachen.**
+
+## 🎓 Über das Projekt
+
+### IHK-Abschlussprüfung
+Dieses Projekt wurde als **praktische Abschlussprüfung** im Rahmen der Ausbildung bei der **IHK Aachen** entwickelt und demonstriert umfassende Kenntnisse in der Java-Programmierung und Softwareentwicklung.
+
+### Prüfungsanforderungen
+- ✅ **Objektorientierte Programmierung** in Java
+- ✅ **Multi-Threading-Implementierung** für parallele Datenverarbeitung
+- ✅ **Datei-I/O und Batch-Verarbeitung** für große Datenmengen
+- ✅ **Mathematische Algorithmen-Implementierung** (Autokorrelationsfunktion)
+- ✅ **Benutzerfreundlichkeit** durch interaktive Batch-Skripte
+- ✅ **Vollständige Dokumentation** (README, JavaDoc)
+- ✅ **Fehlerbehandlung und Robustheit** für Produktionsreife
+- ✅ **JAR-Distribution** für einfache Deployment
+
+### Bewertungskriterien
+- **Code-Qualität**: Saubere Struktur, Kommentierung, Best Practices
+- **Funktionalität**: Korrekte Implementierung aller Anforderungen
+- **Benutzerfreundlichkeit**: Intuitive Bedienung für Endanwender
+- **Dokumentation**: Umfassende technische Dokumentation
+- **Testing**: Robustheit bei verschiedenen Eingabeszenarien
+- **Performance**: Optimierte Multi-Threading-Architektur
 
 ## 🎯 Überblick
 
@@ -19,7 +46,7 @@ Der AKF Simulator automatisiert komplexe Signalanalyseverfahren und führt präz
 - **⚡ FWHM-Analyse**: Full Width Half Maximum Berechnung für Pulssignale
 - **🚀 Multi-Threading**: Parallele Verarbeitung großer Datensätze
 - **📁 Batch-Verarbeitung**: Simultane Bearbeitung mehrerer Eingabedateien
-- **🗃️ JAR-Distribution**: Portable ausführbare JAR-Datei (`Loesung.jar`)
+- **🗃️ JAR-Distribution**: Portable ausführbare JAR-Datei (`AKF_Simulator.jar`)
 - **🖥️ Interaktives Batch-Skript**: Benutzergeführte Eingabe über `starte_AKF_Simulation.bat`
 
 ## 🔧 Systemanforderungen
@@ -40,7 +67,7 @@ Der AKF Simulator automatisiert komplexe Signalanalyseverfahren und führt präz
 ### Option 1: Mit vorhandener JAR-Datei (Empfohlen)
 
 **1. JAR-Datei verwenden:**
-- Verwenden Sie die mitgelieferte `Loesung.jar`
+- Verwenden Sie die mitgelieferte `AKF_Simulator.jar`
 - Oder laden Sie die aktuelle Version aus den [Releases](https://github.com/IhrUsername/AKF_Simulator/releases) herunter
 
 **2. Mit interaktivem Batch-Skript starten:**
@@ -52,13 +79,13 @@ starte_AKF_Simulation.bat
 **3. Direkte JAR-Ausführung:**
 ```bash
 # Grundlegende Ausführung
-java -jar Loesung.jar "eingabe_ordner" "ausgabe_ordner"
+java -jar AKF_Simulator.jar "eingabe_ordner" "ausgabe_ordner"
 
 # Mit optimierten Parametern
-java -Xmx1g -jar Loesung.jar "data/input" "data/output"
+java -Xmx1g -jar AKF_Simulator.jar "data/input" "data/output"
 
 # Nur Eingabeordner (Ausgabe im gleichen Verzeichnis)
-java -jar Loesung.jar "data/input"
+java -jar AKF_Simulator.jar "data/input"
 ```
 
 ### Option 2: JAR-Datei aus Quellcode erstellen
@@ -89,12 +116,12 @@ dir /s *.class
 **2. JAR-Archiv erstellen:**
 ```bash
 # JAR mit allen kompilierten Klassen erstellen
-jar -cvfe Loesung.jar Main.Main *.class Algorithmus/*.class Ausgabe/*.class Eingabe/*.class Model/*.class Controller/*.class
+jar -cvfe AKF_Simulator.jar Main.Main *.class Algorithmus/*.class Ausgabe/*.class Eingabe/*.class Model/*.class Controller/*.class
 ```
 
 **3. JAR-Datei testen:**
 ```bash
-java -jar Loesung.jar "testdaten" "ergebnisse"
+java -jar AKF_Simulator.jar "testdaten" "ergebnisse"
 ```
 
 ## 🖥️ Interaktives Batch-Skript: `starte_AKF_Simulation.bat`
@@ -104,7 +131,7 @@ Das Hauptfeature des Projekts ist das benutzerfreundliche Batch-Skript für die 
 ### **Funktionen des Batch-Skripts:**
 - ✅ Interaktive Pfadeingabe für Eingabedaten
 - ✅ Optionale Ausgabepfad-Spezifikation  
-- ✅ Automatische JAR-Erkennung (`Loesung.jar`)
+- ✅ Automatische JAR-Erkennung (`AKF_Simulator.jar`)
 - ✅ Benutzerfreundliche Eingabeaufforderungen
 - ✅ Unterstützung für relative und absolute Pfade
 
@@ -137,7 +164,7 @@ Optional: Bitte den gewünschten absoluten Pfad zur Ausgabedatei eingeben.
 
 ```
 AKF_Simulator/
-├── 🗃️ Loesung.jar                 # Ausführbare JAR-Datei
+├── 🗃️ AKF_Simulator.jar           # Ausführbare JAR-Datei
 ├── 🚀 starte_AKF_Simulation.bat   # Interaktiver Launcher
 ├── 📖 README.md                   # Diese Datei
 ├── 📄 Anweisungen_jar_Erstellung_HTMLDOC_NACH_pdf.txt # Build-Anweisungen
@@ -216,24 +243,24 @@ AKF_Simulator/
 ### Szenario 2: Kommandozeilen-Verwendung
 ```bash
 # Direkte JAR-Ausführung mit Parametern
-java -jar Loesung.jar "C:\Messdaten\Versuch1" "C:\Ergebnisse\Versuch1"
+java -jar AKF_Simulator.jar "C:\Messdaten\Versuch1" "C:\Ergebnisse\Versuch1"
 
 # Mit Performance-Optimierung
-java -Xmx2g -jar Loesung.jar "./input" "./output"
+java -Xmx2g -jar AKF_Simulator.jar "./input" "./output"
 ```
 
 ### Szenario 3: Batch-Verarbeitung mehrerer Ordner
 ```bash
 # Mehrere Datensätze verarbeiten (Linux/macOS)
 for dir in data1 data2 data3; do
-    java -jar Loesung.jar "$dir" "results_$dir"
+    java -jar AKF_Simulator.jar "$dir" "results_$dir"
 done
 ```
 
 ```cmd
 REM Windows Batch-Verarbeitung
 for /d %%i in (Messung*) do (
-    java -jar Loesung.jar "%%i" "Ergebnis_%%i"
+    java -jar AKF_Simulator.jar "%%i" "Ergebnis_%%i"
 )
 ```
 
@@ -242,16 +269,16 @@ for /d %%i in (Messung*) do (
 ### Empfohlene JVM-Parameter
 ```bash
 # Standard-Konfiguration
-java -Xmx1g -Xms256m -jar Loesung.jar "input" "output"
+java -Xmx1g -Xms256m -jar AKF_Simulator.jar "input" "output"
 
 # Für große Datensätze (>100MB)
-java -Xmx4g -Xms1g -jar Loesung.jar "input" "output"
+java -Xmx4g -Xms1g -jar AKF_Simulator.jar "input" "output"
 
 # Mit Garbage Collection Optimierung  
-java -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -jar Loesung.jar "input" "output"
+java -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -jar AKF_Simulator.jar "input" "output"
 
 # Debug-Modus mit GC-Logging
-java -verbose:gc -Xloggc:gc.log -jar Loesung.jar "input" "output"
+java -verbose:gc -Xloggc:gc.log -jar AKF_Simulator.jar "input" "output"
 ```
 
 ## 📚 JavaDoc-Dokumentation
@@ -297,10 +324,10 @@ find . -name "*.class"
 **Problem: "Main-Class nicht gefunden" bei JAR-Ausführung**
 ```bash
 # Lösung: JAR mit korrekter Main-Class erstellen
-jar -cvfe Loesung.jar Main.Main *.class Algorithmus/*.class Ausgabe/*.class Eingabe/*.class Model/*.class Controller/*.class
+jar -cvfe AKF_Simulator.jar Main.Main *.class Algorithmus/*.class Ausgabe/*.class Eingabe/*.class Model/*.class Controller/*.class
 
 # JAR-Inhalt überprüfen
-jar -tf Loesung.jar | grep Main.class
+jar -tf AKF_Simulator.jar | grep Main.class
 ```
 
 ### Laufzeitprobleme
@@ -308,14 +335,14 @@ jar -tf Loesung.jar | grep Main.class
 **Problem: OutOfMemoryError**
 ```bash
 # Lösung: Heap-Speicher erhöhen
-java -Xmx4g -jar Loesung.jar "input" "output"
+java -Xmx4g -jar AKF_Simulator.jar "input" "output"
 ```
 
 **Problem: Batch-Skript findet JAR nicht**
 ```batch
 REM Überprüfung: JAR im gleichen Verzeichnis?
-if not exist "Loesung.jar" (
-    echo FEHLER: Loesung.jar nicht gefunden!
+if not exist "AKF_Simulator.jar" (
+    echo FEHLER: AKF_Simulator.jar nicht gefunden!
     echo Stellen Sie sicher dass die JAR-Datei im gleichen Verzeichnis liegt.
     pause
     exit /b 1
@@ -330,23 +357,29 @@ if not exist "Loesung.jar" (
 ### Debug-Tipps
 ```bash
 # Ausführliche Ausgaben aktivieren
-java -verbose:class -jar Loesung.jar "input" "output"
+java -verbose:class -jar AKF_Simulator.jar "input" "output"
 
 # Klassenladepfad überprüfen
-java -cp . -jar Loesung.jar "input" "output"
+java -cp . -jar AKF_Simulator.jar "input" "output"
 
 # Arbeitverzeichnis überprüfen
-java -Duser.dir=%CD% -jar Loesung.jar "input" "output"
+java -Duser.dir=%CD% -jar AKF_Simulator.jar "input" "output"
 ```
 
 ## 🚀 Quick-Start-Guide
 
 ### Für Endanwender:
-1. **JAR-Datei (`Loesung.jar`) in gewünschtes Verzeichnis kopieren**
+1. **JAR-Datei (`AKF_Simulator.jar`) in gewünschtes Verzeichnis kopieren**
 2. **`starte_AKF_Simulation.bat` per Doppelklick starten**
 3. **Eingabepfad eingeben (z.B. `./Messdaten`)**
 4. **Optional: Ausgabepfad eingeben**
 5. **Simulation läuft automatisch**
+
+### Für Prüfungsausschuss/Gutachter:
+1. **JavaDoc-Dokumentation öffnen**: `JavaDoc/index.html`
+2. **Quellcode-Review**: Vollständiger Quellcode im `src/` Verzeichnis
+3. **Funktionstest**: Batch-Skript für einfache Demonstration
+4. **Build-Prozess**: Anweisungen in `Anweisungen_jar_Erstellung_HTMLDOC_NACH_pdf.txt`
 
 ### Für Entwickler:
 1. **Repository klonen**
@@ -356,30 +389,68 @@ java -Duser.dir=%CD% -jar Loesung.jar "input" "output"
 
 ## 📄 Lizenz
 
-Dieses Projekt steht unter der **MIT-Lizenz**.
+Dieses Projekt wurde als **Abschlussprüfung der IHK Aachen** entwickelt und dient zu **Bildungs- und Demonstrationszwecken**.
+
+### Nutzungshinweise
+- ✅ **Bildungszwecke**: Freie Nutzung für Lernen und Lehre
+- ✅ **Demonstrationszwecke**: Zeigen von Programmierfertigkeiten  
+- ✅ **Forschung**: Akademische und wissenschaftliche Nutzung
+- ✅ **Prüfungszwecke**: Bewertung durch IHK-Prüfungsausschuss
+- ⚠️ **Kommerzielle Nutzung**: Nur nach Rücksprache mit dem Autor
+- ⚠️ **Weiterverteilung**: Bitte Originalquelle und IHK-Prüfungskontext erwähnen
+
+### Urheberrecht
+**© 2022 Klaus Schmidt - IHK Aachen Abschlussprüfung**
+
+Entwickelt im Rahmen der Abschlussprüfung zum mathematisch-technischen Softwareentwickler bei der IHK Aachen.
+
+### Rechtlicher Hinweis
+Dieses Projekt unterliegt den **Prüfungsordnungen der IHK Aachen** und wurde gemäß den Anforderungen der praktischen Abschlussprüfung erstellt. Die Nutzung für Lehr- und Lernzwecke ist ausdrücklich erwünscht.
 
 ## 🤝 Contributing
 
-Beiträge sind herzlich willkommen! 
+**Hinweis**: Da dies ein **IHK-Prüfungsprojekt** ist, sind Beiträge hauptsächlich zu **Bildungs- und Verbesserungszwecken** willkommen.
+
+**Willkommene Beiträge:**
+- 📚 **Dokumentations-Verbesserungen** für bessere Verständlichkeit
+- 🐛 **Fehlerkorrekturen** und Code-Optimierungen  
+- ✨ **Zusätzliche Beispiele** und realistische Testfälle
+- 🎓 **Lehrpläne und Tutorials** basierend auf diesem Code
+- 📈 **Performance-Optimierungen** für größere Datensätze
+- 🔧 **Build-Prozess-Verbesserungen** und Automatisierung
 
 **Entwicklungs-Workflow:**
 1. Repository forken
-2. Feature-Branch erstellen
+2. Feature-Branch erstellen (`feature/verbesserung-dokumentation`)
 3. Änderungen implementieren
-4. Alle Java-Dateien kompilieren
-5. JAR neu erstellen und testen
-6. Pull Request erstellen
+4. Alle Java-Dateien kompilieren und testen
+5. JAR neu erstellen und Funktionalität validieren
+6. Pull Request mit **Bildungskontext** und Beschreibung erstellen
+
+**Code-of-Conduct:**
+- Respektvolles Feedback und konstruktive Kritik
+- Fokus auf Lerneffekt und Bildungswert
+- Berücksichtigung des IHK-Prüfungskontexts
 
 ## 📞 Support
 
 - 🐛 **Issues**: Für Bug Reports und Feature Requests
-- 📖 **JavaDoc**: Vollständige API-Dokumentation verfügbar
-- 💬 **Discussions**: Für allgemeine Fragen und Diskussionen
+- 📖 **JavaDoc**: Vollständige API-Dokumentation im `JavaDoc/` Verzeichnis
+- 💬 **Discussions**: Für allgemeine Fragen und fachliche Diskussionen
+- 🎓 **Educational Use**: Bei Fragen zur Nutzung in Lehrplänen
+
+### Für Prüfungsausschuss
+- 📋 **Vollständige Dokumentation** in JavaDoc-Format verfügbar
+- 🔧 **Build-Anweisungen** in separater Textdatei dokumentiert
+- 🧪 **Testszenarien** über Batch-Skript einfach ausführbar
+- 📊 **Performance-Metriken** über JVM-Parameter konfigurierbar
 
 ---
+
+**🎓 IHK Aachen Abschlussprüfung - Demonstriert fortgeschrittene Java-Kenntnisse**
 
 **⭐ Gefällt Ihnen dieses Projekt? Geben Sie uns einen Stern auf GitHub!**
 
 **🚀 Bereit zum Start? Führen Sie `starte_AKF_Simulation.bat` aus!**
 
-**📖 Benötigen Sie die API-Dokumentation? Öffnen Sie `JavaDoc/index.html` in Ihrem Browser!**
+**📖 Vollständige Dokumentation? Öffnen Sie `JavaDoc/index.html` in Ihrem Browser!**
