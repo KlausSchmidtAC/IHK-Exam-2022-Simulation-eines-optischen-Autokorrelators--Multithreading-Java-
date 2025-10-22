@@ -3,7 +3,7 @@
 [![Java](https://img.shields.io/badge/Java-18+-orange.svg)](https://www.oracle.com/java/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/username/AKF_Simulator)
-[![JAR](https://img.shields.io/badge/JAR-Ready-green.svg)](#-jar-datei-erstellen-und-verwenden)
+[![JAR](https://img.shields.io/badge/JAR-Ready-green.svg)](#installation-und-ausführung)
 
 Ein **Java-basierter Autokorrelationsfunktions-Simulator** mit fortschrittlichen mathematischen Algorithmen für die präzise Analyse von Messdaten. Das System nutzt Multi-Threading-Architekturen für optimale Performance und wird über das interaktive Batch-Skript `starte_AKF_Simulation.bat` gestartet.
 
